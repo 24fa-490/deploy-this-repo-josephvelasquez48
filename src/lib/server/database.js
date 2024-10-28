@@ -1,7 +1,7 @@
 import postgres from 'postgres';
 import * as env from '$env/dynamic/private';
 
-const POSTGRES_URL = env.POSTGRES_URL;
-const sql = postgres(POSTGRES_URL);
+const PGCONNECT = env.PGCONNECT;
+const sql = postgres(PGCONNECT);
 
 export default sql;
