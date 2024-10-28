@@ -26,6 +26,6 @@
 
 # Where am I deployed?
 
-<enter your URL here>
+deploy-this-repo-josephvelasquez48-x4qg.vercel.app
 
 
