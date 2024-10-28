@@ -7,7 +7,7 @@
     <div class="shipname">{container.nameofship}</div>
     <div class="date">{container.datecontainershipped}</div>
     <div class="size">{container.containersize}</div>
-<div>
+</div>
 <style>
 	.row {
 		display: flex;
