@@ -1,9 +1,7 @@
 
-import postgres from 'postgres'
+import * as env from '$env/dynamic/private';
 
-// see env variables in .env
-import {PGCONNECT} from '$env/static/private';
-
-const sql = postgres(PGCONNECT, {} )
+const DATABASE_URL = env.DATABASE_URL;
+const sql = postgres(DATABASE_URL);
 
 export default sql;
