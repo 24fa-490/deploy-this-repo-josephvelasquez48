@@ -1,3 +1,7 @@
 import postgres from 'postgres';
-const sql = postgres(process.env.PGCONNECT, {});
+import * as env from '$env/dynamic/private';
+
+const PGCONNECT = env.PGCONNECT;
+const sql = postgres(PGCONNECT);
+
 export default sql;
